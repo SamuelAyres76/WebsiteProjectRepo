@@ -1,0 +1,160 @@
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --- General Styling. ---
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Nice checker pattern. */
+body 
+{
+    background-image: url("../images/Background.jpg");
+    margin: 2.25rem;
+}
+
+/* To make the content easier to see. */
+.content-area 
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Navbar styling. */
+.custom-navbar 
+{
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* Added emphasis to the horizontal line. */
+hr 
+{
+    border: none;
+    border-top: 0.188rem solid black;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --- Styling For Logo. ---
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* I wanted to make the logo react to being hovered over. Thus these exist! */
+.logo 
+{
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover
+{
+    transform: scale(1.10);
+} 
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  --- Styling For Products. ---
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /* Where the products name, image, price & description will be shown. */
+.product-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product 
+{
+    width: calc(25% - 1.25rem);
+    height: auto;
+    margin-bottom: 1.25rem;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images for the products. */
+.product img 
+{
+    object-fit: cover;
+    margin-bottom: 0.625rem;
+    border-radius: 1.25rem;
+    border: 0.188rem solid black;
+    max-width: 100%;
+    max-height: auto;
+    align-self: center;
+}
+
+/* Hover Effect. */
+.product:hover 
+{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Keep the description from getting too large. */
+.product .description 
+{
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
+}
+
+/* Whenever the screen reaches a certain length the number of products shown per row gets reduced. */
+@media (max-width: 48rem) 
+{
+    .product 
+    {
+        width: calc(50% - 1.25rem);
+    }
+}
+
+@media (max-width: 414px) 
+{
+    .product 
+    {
+      width: calc(100% - 1.25rem);
+    }
+  
+    /* Center the products */
+    .product-container 
+    {
+      justify-content: center;
+    }
+}
+
+/* Load More Button */
+.load-more-btn 
+{
+    display: block;
+    margin: 1.25rem auto;
+    padding: 0.625rem 1.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for the featured product image. */
+.card-img-top 
+{
+    max-width: 50%;
+    height: auto;
+    border-radius: 1.25rem;
+    border: 0.188rem solid black;
+}
+
+/* Adjust the image size for smaller screens. */
+@media (max-width: 992px) 
+{
+    .card-img-top {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+}

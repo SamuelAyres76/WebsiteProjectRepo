@@ -1,0 +1,183 @@
+<!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  - Name: Samuel Ayres
+  - ID: S00237258
+  - 
+  - Start Date: 05/11/23
+  - End Date: 29/12/23
+  -
+  - Website Synopsis: A web store for infant products.
+  - Page Synposis: The main page where users load into.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Head -->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiny Treasures</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="javascript/script.js"></script>
+</head>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Navbar -->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Tiny Treasures Logo" class="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="account.html">Account + Checkout</a>
+                </li>
+
+            </ul>
+        </div>
+        
+    </div>
+  </nav>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Web Page Content -->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="content-area">
+    <center><h2>Home Page</h2></center>
+
+    <div class="container mt-4">
+      <div class="row">
+          <div class="col-lg-8">
+              <h2>Welcome to Tiny Treasures!</h2>
+              <h3>A store with everything you need for your baby.</h3>
+              <hr>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis velit sed velit tincidunt
+                  hendrerit ut id neque. Proin sed risus at arcu facilisis bibendum. Nullam volutpat justo et est
+                  posuere ultricies.
+              </p>
+              <p>
+                  Ut interdum, ligula eu congue consectetur, nisi massa laoreet odio, vel luctus velit odio sit
+                  amet ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  egestas. Nulla ac enim nec elit bibendum ullamcorper sed ut libero.
+              </p>
+              <a href="store.html" class="btn btn-primary">Explore Our Products</a>
+          </div>
+          <div class="col-lg-4">
+              <!-- Sidebar or additional content -->
+              <h3>Featured Product</h3>
+              <div class="card mb-3">
+                <center>
+                  <img src="images/Products/product1.jpg" class="card-img-top" alt="Baby Bottle">
+                  <div class="card-body">
+                      <h5 class="card-title">Baby Bottle - €4.99</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet baby bottle consectetur adipiscing.</p>
+                      <a href="store.html" class="btn btn-sm btn-primary">View Product</a>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+      </div>
+  
+
+  <br/><br/><br/>
+  <hr/>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- A Carousel (uses bootstrap). -->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<center><h3>Our Best Sellers</h3></center>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <div class="carousel" id="productCarousel">
+        <!-- Product 1 -->
+        <div class="product"></div>
+        <!-- Product 2 -->
+        <div class="product"></div>
+        <!-- Product 3 -->
+        <div class="product"></div>
+        <!-- Product 4 -->
+        <div class="product"></div>
+        <!-- Product 5 -->
+        <div class="product"></div>
+        <!-- Product 6 -->
+        <div class="product"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // loading products into the carousel.
+  populateCarousel();
+  populateCarousel();
+  populateCarousel();
+  populateCarousel();
+  populateCarousel();
+  populateCarousel();
+</script>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Footer https://getbootstrap.com/docs/5.3/examples/footers/ -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link px-2 text-body-secondary">Store</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-2 text-body-secondary">Support</a></li>
+        <li class="nav-item"><a href="account.html" class="nav-link px-2 text-body-secondary">Account + Checkout</a></li>
+      </ul>
+      
+      <p class="text-center text-body-secondary">© 2023 Tiny Treasures, Inc</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
